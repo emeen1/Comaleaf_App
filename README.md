@@ -2,9 +2,9 @@
 
 ComaLeaf est une application web complète développée avec Django qui permet de détecter automatiquement les maladies des plantes en analysant des images de feuilles. La plateforme inclut également un système de gestion de contenu pour les plantes, un forum communautaire, et un tableau de bord administrateur.
 
-## ✨ Fonctionnalités Principales
+##  Fonctionnalités Principales
 
-### 🔬 Détection de Maladies de Plantes (IA)
+###  Détection de Maladies de Plantes (IA)
 - **Analyse d'images** : Upload de photos de feuilles pour détecter automatiquement les maladies
 - **38 catégories** : Détection de maladies sur pommes, tomates, maïs, raisins, et bien d'autres plantes
 - **Précision élevée** : Utilise un modèle TensorFlow/Keras entraîné pour une précision optimale
@@ -17,35 +17,35 @@ ComaLeaf est une application web complète développée avec Django qui permet d
   - Virus de la mosaïque
   - Et bien d'autres...
 
-### 🌱 Gestion de Catalogue de Plantes
+###  Gestion de Catalogue de Plantes
 - **Base de données** : Catalogue complet de plantes avec photos et descriptions
 - **Informations détaillées** : Nom scientifique, descriptions, images
 - **Interface CRUD** : Ajout, modification, suppression de plantes (admin)
 - **Navigation par catégories** : Parcours facile du catalogue
 
-### 📝 Système de Publications Communautaire
+###  Système de Publications Communautaire
 - **Posts** : Création, édition et suppression de publications
 - **Commentaires** : Interaction entre utilisateurs
 - **Likes** : Système de j'aime pour les publications
 - **Tags** : Catégorisation des posts par tags
 - **Permissions** : Gestion des droits d'auteur et administrateur
 
-### 👥 Gestion des Utilisateurs
+###  Gestion des Utilisateurs
 - **Authentification** : Inscription et connexion
 - **Profils personnalisés** : Photos de profil, informations utilisateur
 - **Rôles** : Administrateurs, employés et utilisateurs standards
 - **Tableau de bord** : Gestion des utilisateurs pour les admins
 
-### 📧 Contact
+###  Contact
 - **Formulaire** : Envoi d'emails directement depuis l'application
 - **Intégration SMTP** : Via Gmail
 
-### 🎨 Interface Moderne
+###  Interface Moderne
 - **Tailwind CSS** : Design responsive et moderne
 - **HTMX** : Interactions dynamiques sans rechargement de page
 - **Widget Tweaks** : Amélioration des formulaires Django
 
-## 🚀 Technologies Utilisées
+##  Technologies Utilisées
 
 ### Backend
 - **Django 5.2.4** : Framework web Python
@@ -64,14 +64,14 @@ ComaLeaf est une application web complète développée avec Django qui permet d
 - **Widget Tweaks** : Amélioration des formulaires Django
 - **Django HTMX** : Support HTMX pour Django
 
-## 📋 Prérequis
+##  Prérequis
 
 - Python 3.8+
 - MySQL Server (ou SQLite pour le développement)
 - pip
 - npm (pour Tailwind CSS)
 
-## 🛠️ Installation
+##  Installation
 
 ### 1. Cloner le dépôt
 ```bash
@@ -147,7 +147,7 @@ python manage.py runserver
 
 L'application sera accessible sur `http://localhost:8000`
 
-## 📁 Structure du Projet
+##  Structure du Projet
 
 ```
 ComaPrimApp/
@@ -164,7 +164,7 @@ ComaPrimApp/
 └── manage.py             # Point d'entrée Django
 ```
 
-## 🔐 Configuration de l'Email (Optionnel)
+##  Configuration de l'Email (Optionnel)
 
 Pour activer l'envoi d'emails, éditez `comaLeaf/settings.py` :
 
@@ -177,14 +177,14 @@ EMAIL_HOST_USER = 'votre_email@gmail.com'
 EMAIL_HOST_PASSWORD = 'votre_mot_de_passe_application'
 ```
 
-## 🤖 Modèle de Détection
+##  Modèle de Détection
 
 Le modèle IA `plant_model_v5-beta.h5` est un modèle TensorFlow/Keras pré-entraîné capable de détecter 38 catégories de maladies de plantes différentes. Il analyse les images de feuilles et fournit :
 - Le nom de la maladie
 - Le niveau de confiance
 - La visualisation des zones affectées
 
-## 📸 Catégories de Détection
+##  Catégories de Détection
 
 - **Pommier** : Gale, pourriture noire, rouille, sain
 - **Tomate** : Feu bactérien, mildiou précoce/tardif, moisissure foliaire, tache septorienne, acariens, virus
@@ -193,7 +193,7 @@ Le modèle IA `plant_model_v5-beta.h5` est un modèle TensorFlow/Keras pré-entr
 - **Piment** : Feu bactérien, sain
 - **Autres** : Pomme de terre, pêche, cerise, fraise, etc.
 
-## 🌐 URLs Principales
+##  URLs Principales
 
 - `/` : Page d'accueil
 - `/auth/connexion/` : Connexion
@@ -205,35 +205,35 @@ Le modèle IA `plant_model_v5-beta.h5` est un modèle TensorFlow/Keras pré-entr
 - `/contact/` : Formulaire de contact
 - `/admin/` : Interface Django admin
 
-## 🧪 Tests
+##  Tests
 
 Pour exécuter les tests :
 ```bash
 python manage.py test
 ```
 
-## 📝 License
+##  License
 
 Ce projet est sous licence MIT.
 
-## 👨‍💻 Auteur
+##  Auteur
+NOUAM IMANE |  Développé avec ❤️ pour aider les agriculteurs et jardiniers à protéger leurs cultures au sein de COMAPRIM.
 
-Développé avec ❤️ pour aider les agriculteurs et jardiniers à protéger leurs cultures.
-
-## 🙏 Remerciements
+##  Remerciements
 
 - Dataset des maladies de feuilles
 - Community Django pour l'excellent framework
 - TensorFlow pour les outils d'IA
+- COMAPRIM pour opportunité du stage.
 
-## 🐛 Rapport de Bugs
+##  Rapport de Bugs
 
 Si vous trouvez un bug, veuillez ouvrir une issue sur GitHub avec :
 - La description du problème
 - Les étapes pour reproduire
 - Votre configuration (OS, version Python, Django)
 
-## 🔮 Améliorations Futures
+##  Améliorations Futures
 
 - [ ] Support multilingue
 - [ ] API REST pour les applications mobiles
